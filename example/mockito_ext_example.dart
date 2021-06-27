@@ -60,7 +60,7 @@ void main() {
     ]);
     when(a.b).thenReturn('a');
 
-    verifyStream(b.stream).emitsInOrder(['aa', 'ba']);
+    verifyStream(b.stream).emitsValuesInOrder(['aa', 'ba']);
 
     b.e();
     b.e();
